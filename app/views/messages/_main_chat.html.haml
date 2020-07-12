@@ -12,33 +12,6 @@
         Edit
   .messages
     = render @messages
-    .message
-      .upper-message
-        .upper-message__user-name
-          メンバー
-        .upper-message__date
-          日付
-      .lower-message
-        .lower-message__content
-          メッセージ
-    .message
-      .upper-message
-        .upper-message__user-name
-          メンバー
-        .upper-message__date
-          日付
-      .lower-message
-        .lower-message__content
-          メッセージ
-    .message
-      .upper-message
-        .upper-message__user-name
-          メンバー
-        .upper-message__date
-          日付
-      .lower-message
-        .lower-message__content
-          メッセージ
   .form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'form__message', placeholder: ' type a message'
